@@ -25,8 +25,8 @@ class Openspace:
         for i, table in enumerate(self.tables):
             # alle stoelen van die tafel overlopen
             for j, seat in enumerate(table.seats):
-                print(f'tafel {i}, stoel {j}: {seat.occupant}')    
-
+                print(f'tafel {i}, stoel {j}: {seat.occupant}')
+                
     def store(self, filename):
         with open(filename, 'w', newline='') as csvfile:
             fieldnames = ["Table", "Occupants"]
