@@ -42,19 +42,20 @@ class Table: #Class table with 2 attributes
     def left_capacity(self): #returns an integer    
         return sum(seat.free for seat in self.seats)
 
-# Example Usage with 6 tables, each having 4 seats:
-tables = [Table() for _ in range(6)]
+if  __name__ == '__main__':
+    # Example Usage with 6 tables, each having 4 seats:
+    tables = [Table() for _ in range(6)]
 
-# Assigning occupants to seats
-tables[0].assign_seat("Alice")
-tables[1].assign_seat("Bob")
-tables[2].assign_seat("Charlie")
-tables[3].assign_seat("David")
+    # Assigning occupants to seats
+    tables[0].assign_seat("Alice")
+    tables[1].assign_seat("Bob")
+    tables[2].assign_seat("Charlie")
+    tables[3].assign_seat("David")
 
-# Checking if there's a free spot at each table
-for i, table in enumerate(tables):
-    print(f"Table {i + 1} has a free spot: {table.has_free_spot()}")
+    # Checking if there's a free spot at each table
+    for i, table in enumerate(tables):
+        print(f"Table {i + 1} has a free spot: {table.has_free_spot()}")
 
-# Checking left capacity at each table
-for i, table in enumerate(tables):
-    print(f"Table {i + 1} has left capacity: {table.left_capacity()}")
+    # Checking left capacity at each table
+    for i, table in enumerate(tables):
+        print(f"Table {i + 1} has left capacity: {table.left_capacity()}")

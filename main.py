@@ -6,7 +6,7 @@ Launch the organizer. Display the results.
 import csv
 
 # Specify the path to your CSV file (converted from Excel)
-csv_file_path = 'path/to/your/file.csv'
+csv_file_path = 'C:\Users\fabie\OneDrive\Documenten\BeCodeGhent\GNT-Arai-6\projects\01-openspace-organizer\new_colleagues.csv'
 
 # Open the CSV file and read its contents
 data_list = []
